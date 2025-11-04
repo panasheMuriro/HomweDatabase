@@ -3,10 +3,10 @@ import Editor from '@monaco-editor/react';
 import { Panel, PanelGroup, PanelResizeHandle } from 'react-resizable-panels';
 import { Play, AlertCircle, CheckCircle, FileText, Database, ChevronDown, ChevronRight } from 'lucide-react';
 import antlr4 from 'antlr4';
-import HomweParser from '../../grammar/build/HomweParser.js';
-import { HomweExecutor } from '../../grammar/HomweVisitor.js';
+import HomweParser from '../grammar/build/HomweParser.js';
+import { HomweExecutor } from '../grammar/HomweVisitor.js';
 import { homweLanguageDefinition, homweTheme } from './homweLanguage';
-import HomweLexer from '../../grammar/build/HomweLexer.js';
+import HomweLexer from '../grammar/build/HomweLexer.js';
 
 const defaultCode = `// Uyai ku Homwe Database Language!
 // Create collection
