@@ -33,7 +33,7 @@ describe('Homwe Database Tests', () => {
             parseAndExecute('mu homwe mune users');
             const result = parseAndExecute('mu homwe mune users');
             expect(result[0]).toHaveProperty('success', false);
-            expect(result[0]).toHaveProperty('message', 'Collection already exists');
+            expect(result[0]).toHaveProperty('message', 'Collection yagadzirwa kare');
         });
 
         it('should define columns for a collection', () => {

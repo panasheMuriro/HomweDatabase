@@ -12,7 +12,7 @@ statement
 
 createStatement
     : 'mu' 'homwe' 'mune' IDENTIFIER                                    # CreateCollection
-    | IDENTIFIER 'ine' columnList                                       # DefineColumns
+    | IDENTIFIER aneVariants columnList                                 # DefineColumns
     | 'isa' '(' valueList ')' 'mu' IDENTIFIER                          # InsertValues
     ;
 
@@ -67,6 +67,7 @@ value
     | IDENTIFIER
     ;
 
+// Lexer Rules
 IDENTIFIER: [a-zA-Z_][a-zA-Z0-9_]*;
 NUMBER: [0-9]+('.'[0-9]+)?;
 STRING: '"' (EscapeSequence | ~["\\\r\n])* '"' 

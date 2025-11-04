@@ -91,11 +91,11 @@ export class HomweExecutor extends HomweVisitor {
 
 
         if (!collectionName) {
-            return { success: false, message: 'No collection name found' };
+            return { success: false, message: 'No collection iyi haisi kuzivikanwa' };
         }
 
         if (this.collections.has(collectionName)) {
-            return { success: false, message: 'Collection already exists' };
+            return { success: false, message: 'Collection yagadzirwa kare' };
         }
 
         this.collections.set(collectionName, []);
