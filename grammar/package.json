@@ -1,0 +1,25 @@
+{
+  "name": "grammar",
+  "version": "1.0.0",
+  "main": "HomweVisitor.js",
+  "scripts": {
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "build": "java -jar antlr-4.13.2-complete.jar -Dlanguage=JavaScript -visitor -o build Homwe.g4"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^1.0.0",
+    "@vitest/ui": "^1.6.1",
+    "antlr4": "^4.13.2",
+    "jsdom": "^23.0.0",
+    "vitest": "^1.6.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "fake-indexeddb": "^6.2.4"
+  }
+}
